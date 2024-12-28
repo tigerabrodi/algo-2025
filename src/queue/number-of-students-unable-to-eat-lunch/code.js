@@ -3,6 +3,9 @@
  * @param {number[]} sandwiches
  * @return {number}
  */
+
+// students and sandwiches are an array of 0s and 1s
+// we can leverage the fact that both arrays contain only 0s and 1s by using this as the index too for `counts`
 var countStudents = function (students, sandwiches) {
   const counts = [0, 0];
 
