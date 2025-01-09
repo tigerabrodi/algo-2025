@@ -12,6 +12,9 @@ function mergeSort(arr: number[]): number[] {
   return merge(left, right);
 }
 
+// At the very depth, the first time we'll be comparing two elements only
+// e.g. left = [1] and right = [2]
+
 function merge(left: number[], right: number[]): number[] {
   const result: number[] = [];
 
