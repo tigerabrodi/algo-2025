@@ -57,14 +57,14 @@ class Heap {
 
   heapify(arr) {
     const heap = [null, ...arr];
+    this.heap = heap;
 
-    const startIndex = Math.floor((arr.length - 1) / 2);
+    const lastIndex = heap.length - 1;
+    const startIndex = Math.floor(lastIndex / 2);
 
     for (let i = startIndex; i > 0; i--) {
       this.bubbleDown(i);
     }
-
-    this.heap = heap;
   }
 
   bubbleDown(index) {
